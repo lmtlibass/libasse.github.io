@@ -1,0 +1,977 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body
+{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+nav
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img
+{
+    width: 200px;
+    height: 90px;
+    padding: 22px;
+}
+
+nav ul li
+{
+    display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+nav ul li a
+{
+    color:black;
+    font-weight: bolder;
+    font-size: 18PX;
+    padding: 15px;
+    text-decoration: none;
+    border: solid transparent;
+}
+
+a.active,a:hover
+{
+  border-bottom: 8px  solid #CE0033 ;
+  padding: 12px;
+  color: #CE0033;
+}
+.checkbtn
+{
+    color: black;
+    font-size: 60px;
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check
+{
+    display: none;
+}
+.search .loop img
+{
+    width: 80px;
+    height: 80px;
+   line-height: 80px;
+    transform: rotate(80deg);
+}
+.search input
+{
+    display: none;
+}
+input:hover
+{
+    display: initial; 
+}
+.contact
+{
+    background-color: #CE0033;
+    border-radius: 9px;
+    color: #ffffff;
+    font-weight: bolder;
+    
+}
+.langue
+{
+    border:transparent;
+}
+h1
+{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bolder;
+    color: #CE0033;
+}
+/* .ligne-petite-histoire
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}  */
+/* .titre-h
+{
+    position: absolute;
+} */
+.titre-histoire1
+{
+    position: relative;
+    background-color: #CE0033;
+    height: 130px;
+    width: 500px;
+    border-radius: 0 0 43px 0;
+    text-align: right;
+    color: #ffffff;
+    z-index: 4;
+}
+.titre-histoire1 p
+{
+    padding: 25px;
+    font-size: 34px;
+    font-weight:bolder;
+    margin-top: 150px;
+}
+.titre-histoire1 span
+{
+    font-size: 43px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.titre-histoire2
+{
+    position: relative;
+    background-color: #CE0033;
+    height: 130px;
+    width: 500px;
+    border-radius: 0 0 43px 0;
+    text-align: right;
+    opacity: 50%;
+    margin-top: -118px;
+    z-index: 1;
+}
+.titre-histoire2 p
+{
+    display: none;
+    
+}
+contexte-histoire
+{
+    float: right;
+}
+.texte-histoire
+{
+    position: absolute;
+    float: right;
+}
+.histoire
+{
+    position: relative;
+    border: 1px solid #CE0033;
+    background-color: #fff;
+    float: right;
+    width: 450px;
+    height: 480px;
+    margin-right: 130px;
+    margin-top: -200px;
+    padding: 20px;
+    font-style: italic; 
+    border-radius: 9px;
+    z-index: 5;  
+}
+.arriere-histoire
+{
+    position: relative;
+    background-color: #CE0033;
+    float: right;
+    width: 450px;
+    height: 480px;
+    margin-right: -400px;
+    margin-top: -243px;
+    padding: 20px;
+    font-style: italic; 
+    transform: rotate(10deg);
+    border-radius: 9px;
+    z-index: 1;
+}
+
+.pedagogie
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.video-texte-pedagogie
+{
+    margin-left: 103px;
+    margin-right: 103px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+.carte-texte-pedagogie
+{
+    margin-left: 103px;
+    margin-right: 103px;
+}
+
+.pilier
+{
+    margin-left: 83px;
+    margin-top: 50px;
+}
+h2
+{
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #CE0033;
+}
+.trait-pedagogie
+{
+    margin-top: 70px;
+    width: 120px;
+    margin-bottom: 60px;
+    height: 9px;
+    border-radius: 4px;
+    margin: 50px auto;
+    background-color: #CE0033;
+}
+.pilier
+{
+
+    box-shadow: 0px 2px 5px #757171;
+    height: 200px;
+    width: 300px;
+    margin-top: 35px;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+   
+}
+.pilier p
+{
+
+    margin-top: 20px;
+}
+.pilier h1
+{
+    text-align: start;
+    margin-top: 6px;
+
+}
+
+.ligne-p
+{
+    background-color: #CE0033;
+    height: 7px;
+    width: 303px;
+    margin-top: -14px;
+    margin-left: -14px;
+    
+}
+.ligne-p span{
+    display: none;
+}
+.deco1
+{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -20px;
+    
+}
+.deco2
+{
+    position: relative;
+    float: left;
+    margin-top: -30px;
+    margin-left: 40px;
+}
+.img-pedagogie #imageP
+{
+    position: relative;
+    width: 500px;
+    height: 700px;
+    margin-top: 50px;
+    margin-right: 100px;
+    border-radius: 9%;
+}
+.bloc .colorImg span
+{
+    display: none;
+}
+
+.bloc .colorImg 
+{
+    position: relative;
+    width: 500px;
+    height: 700px;
+    margin-top: -720px;
+    margin-left: 20px;
+    background-color: #CE0033;
+    border-radius: 9%;
+    z-index: -1;   
+}
+.text-carts-nos-valeurs .desc-nos-valeurs
+{
+    margin-top: 100px;
+}
+.text-carts-nos-valeurs .desc-nos-valeurs p
+{
+    text-justify: auto;
+    
+}
+
+.indexer-valeur
+{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px 20px 30px 0px;
+    border-color: transparent #CE0033 transparent;
+    float: end; 
+    position: regular;
+    margin-left: 180px;
+    margin-top: 175px;
+}
+   
+
+.voireplus
+{
+    background-color: #CE0033;
+    border-radius: 20px 20px 20px 20px;
+    border: transparent;
+    width: 100px;
+    height: 50px;
+    color: #ffff;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.cart
+{
+   width: 550px;
+   height: 100px;
+   box-shadow: 0px 5px 7px rgb(146, 143, 143);
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   margin-top: 32px;
+}
+.num-cart h1
+{
+    padding: 12px;
+    background-color: #CE0033;
+    border-radius: 100%;
+    color: #ffff;
+    position: absolute;
+    opacity: 50%;
+    margin-top: -12px;
+}
+.nos-chiffres
+{
+    margin-top: 50px;
+    background-image: url("img/banderouge.png");
+}
+.chiffres
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 250px;
+    text-align: center;
+}
+.chiffres span
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 52px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-justify: auto;
+    
+}
+.chiffres p
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-justify: auto;
+}
+.desc-equipe
+{
+    text-align: center;
+}
+.equipes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+ 
+.carte-membre h5
+{
+    color: #CE0033;
+   
+}
+.carte-membre
+{
+    width: 250px;
+    padding: 20px;
+    align-content: center;
+    box-shadow: 1px 5px 15px 10px rgba(117, 115, 115, 0.075);
+}
+.carte-membre img
+{
+    position: top;
+    width: 100px;
+    height: 100px;
+}
+.carte-membre .reseau-sociaux img
+{
+    width: 20px;
+    height: 20px;
+
+}
+.section-2-recrutement
+{
+    margin-left: 83px;
+    margin-right: 83px;
+    margin-top: 50px;
+}
+.section-2-recrutement img
+{
+    width: 700px;
+}
+/*recrutement*/
+text-recrutement
+{
+    text-justify: auto;
+}
+.offres
+{
+    background-color: rgb(211, 145, 145);
+}
+.image-recrutement img
+{
+    margin-top: 15px;
+
+}
+.section-3-recrutement
+{
+    margin-top: 40px;
+   
+}/*offres en cours */
+.section-2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 83px;
+    margin-right: 83px;
+}
+.bloc-offres-desc-2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.offres-en-cours 
+{
+    background-color: #F9F4F4;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 50px;
+}
+.offres-en-cours hr
+{
+    background-color: #CE0033;
+}
+.desc-details-offres .detail-offres
+{
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgb(117, 113, 113);
+    height: 130px;
+    padding: 18px;
+    border-radius: 11px 11px 11px 11px;
+    margin-left: 22px;
+}
+.postuler-bouton
+{
+    background-color: #CE0033;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+    width: 120px;
+    border-radius: 12px; 
+}
+.desc-offre h4
+{
+    color: #CE0033;
+}
+
+.plus 
+{
+    border: 0 transparent; 
+    border-radius: 100%;
+    background: #CE0033;
+    font-size: 33px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.plus h2
+{  
+    color: #ffffff;  
+}
+
+.bloc-offres-desc-2
+{
+    display: none;
+}
+.bloc-offres-desc-3
+{
+    display: none;
+}
+
+.tel-mail{
+    margin-top: 30px;
+}
+.file>input {
+    display: none;
+  }
+  .joint
+  {
+      display: flex;
+      flex-direction: row;
+          
+  }
+  .joint img
+  {
+      width: 20px;
+      height: 20px;
+  }
+  .joint h2
+  {
+      font-size: 18px;
+  }
+  .rejoindre
+{
+    background-color: #CE0033;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+    width: 120px;
+    border-radius: 12px; 
+}
+.titre-partenairs
+{
+    margin: 0 auto;
+    margin-left: 83px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+.sup-footer
+{
+    background-image: url('img/footerimg.png');
+    height: auto;
+}
+
+.logo-rs .rs img
+{
+    margin-top: 30px;  
+    width: 50px;
+    height: 30px;   
+}
+.menu-footer .menu 
+{
+    margin-top: 30px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-footer .menu ul li 
+{
+    list-style: none;
+}
+.menu-footer .menu ul li  a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.coordonnees-footer
+{
+    margin-top: 30px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.coordonnees-footer .coordonnee ul li
+{
+    list-style: none;
+    margin-top: 10px;  
+    color: #ffffff; 
+}
+.newsletter-footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+.newsletter-footer .newsletter ul li{
+    list-style: none;
+    margin-top: 30px;  
+    color: #ffffff; 
+
+}
+
+.btn-send-mail
+{
+    background-color: #CE0033;
+    color: #ffffff;
+}
+.contain-footer
+{
+    background-color: #CE0033;
+    
+}
+.footer
+{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer .powered span
+{
+    font-weight: bolder;
+    font-size: 14px;
+    color: #ffffff;
+    
+}
+.footer .madewith p
+{
+    font-weight: bolder;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 1200px){
+
+  /*   main
+    {
+        width: 150px;
+        height: 85px;
+        padding: 18px;
+    } */
+   
+    nav ul li a
+    {
+        font-size: 16px;
+    }
+    .ligne-petite-histoire
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    } 
+    .histoire
+    {
+        position: relative;
+        border: 1px solid #CE0033;
+        background-color: #fff;
+        float: right;
+        width: 350px;
+        height: 380px;
+        margin-right: 130px;
+        margin-top: 150px;
+        padding: 20px;
+        font-style: italic; 
+        border-radius: 9px;
+        font-size: 12px;
+        z-index: 5;  
+    }
+    .arriere-histoire
+    {
+        position: relative;
+        background-color: #CE0033;
+        float: right;
+        width: 350px;
+        height: 380px;
+        margin-right: -400px;
+        margin-top: 200px;
+        padding: 20px;
+        font-style: italic; 
+        transform: rotate(10deg);
+        border-radius: 9px;
+        z-index: 1;
+    }
+    .video-texte-pedagogie
+{
+    margin-left: 73px;
+    margin-right: 73px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+    
+}
+    
+
+/* smarphone */
+
+@media (max-width : 858px){
+   body
+   {
+       margin: 0 auto;
+   }
+    .checkbtn
+    {
+        display: block;
+    }
+    ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 700px;
+        border: 1px solid #CE0033;
+        top: 100px;
+        display: none;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav ul li
+    {
+        display: block;
+    }
+    nav ul li a
+    {
+        font-size: 18px;
+    }
+    a.active,a:hover
+    {
+    border-bottom: 8px  solid #CE0033 ;
+    padding: 12px;
+    color: #CE0033;
+    }
+    #check:checked ul{
+       display: initial;
+    }
+    .ligne-petite-histoire
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    } 
+
+    .histoire
+{
+    position: relative;
+    border: 1px solid #CE0033;
+    background-color: #fff;
+    float: right;
+    width: 350px;
+    height: 380px;
+    margin-right: 130px;
+    margin-top: 150px;
+    padding: 20px;
+    font-style: italic; 
+    border-radius: 9px;
+    font-size: 12px;
+    z-index: 5;  
+}
+.arriere-histoire
+{
+    position: relative;
+    background-color: #CE0033;
+    float: right;
+    width: 350px;
+    height: 380px;
+    margin-right: -400px;
+    margin-top: 200px;
+    padding: 20px;
+    font-style: italic; 
+    transform: rotate(10deg);
+    border-radius: 9px;
+    z-index: 1;
+}
+.video-texte-pedagogie
+{
+    margin-left: 53px;
+    margin-right: 53px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.video-pedagogie iframe
+{
+    width: auto;
+}
+.texte-pedagogie
+{
+    text-justify: auto;
+}
+.carts-6pilier
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}    
+.carts-6pilier .deco1 img 
+{
+    display: none;
+}
+.carts-6pilier .deco2 img 
+{
+    display: none;
+}
+.image-pedagogie
+{
+    display: none;
+}
+.text-carts-nos-valeurs
+{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.carts-nos-valeurs
+{
+width: auto;
+}
+.carts-nos-valeurs .cart:hover
+{
+    box-shadow: 2px 4px 4px #CE0033;
+}
+.indexer-valeur
+{
+    display: none;
+}
+.desc-nos-valeurs
+{
+    text-justify: auto;
+    width: auto;
+}
+.desc-equipe
+{
+    text-align: center;
+}
+.equipes
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+ 
+.carte-membre h5
+{
+    color: #CE0033;
+   
+}
+.carte-membre
+{
+    width: 150px;
+    padding: 12px;
+    align-content: center;
+    box-shadow: 1px 5px 15px 10px rgba(117, 115, 115, 0.075);
+}
+.carte-membre img
+{
+    position: top;
+    width: 80px;
+    height: 80px;
+}
+.carte-membre .reseau-sociaux img
+{
+    width: 12px;
+    height: 12px;
+
+}
+.section-2-recrutement 
+{
+    display: flex;
+    flex-direction: column;
+   
+}
+.section-2-recrutement img
+{
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+}
+.texte-recrutement
+{
+    text-justify: auto;
+}
+.section-2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: rap;
+    
+}
+.bloc-offres-desc-2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bloc-offres-desc-2
+{
+    display: flex;
+    flex-direction: block;
+    justify-content: space-between;
+}
+
+.offres-en-cours
+{
+    background-color: rgb(235, 188, 188);
+    width: 500px;
+}
+.detail-offres
+{
+    width: 250px;
+    
+}
+.form
+{
+    margin-top: 50px;
+}
+.titre-partenairs
+{
+   display: flex;
+   flex-direction: column;
+}
+
+
+
+
+}
